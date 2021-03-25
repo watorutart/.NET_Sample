@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace testApplication.Controllers
 {
-    public class HellloController : Controller
+    public class HelloController : Controller
     {
         public IActionResult Index()
         {
-            return View();
+            return Content("こんにちは、世界！！！");
         }
     }
 }
