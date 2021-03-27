@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\wator\\OneDrive\\ドキュメント\\git\\.NET_Sample\\testApplication\\testApplication.csproj": {}
+    "C:\\Users\\wator\\OneDrive\\git\\.NET_Sample\\testApplication\\testApplication.csproj": {}
   },
   "projects": {
-    "C:\\Users\\wator\\OneDrive\\ドキュメント\\git\\.NET_Sample\\testApplication\\testApplication.csproj": {
+    "C:\\Users\\wator\\OneDrive\\git\\.NET_Sample\\testApplication\\testApplication.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\wator\\OneDrive\\ドキュメント\\git\\.NET_Sample\\testApplication\\testApplication.csproj",
+        "projectUniqueName": "C:\\Users\\wator\\OneDrive\\git\\.NET_Sample\\testApplication\\testApplication.csproj",
         "projectName": "testApplication",
-        "projectPath": "C:\\Users\\wator\\OneDrive\\ドキュメント\\git\\.NET_Sample\\testApplication\\testApplication.csproj",
+        "projectPath": "C:\\Users\\wator\\OneDrive\\git\\.NET_Sample\\testApplication\\testApplication.csproj",
         "packagesPath": "C:\\Users\\wator\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\wator\\OneDrive\\ドキュメント\\git\\.NET_Sample\\testApplication\\obj\\",
+        "outputPath": "C:\\Users\\wator\\OneDrive\\git\\.NET_Sample\\testApplication\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\wator\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -39,6 +39,22 @@
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.4, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[3.1.5, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[5.0.2, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

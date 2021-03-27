@@ -12,5 +12,13 @@ namespace testApplication.Controllers
         {
             return Content("こんにちは、世界！！！");
         }
+
+        public IActionResult Greet()
+        {
+            // ビュー変数を用意
+            ViewBag.Message = "こんにちは、世界！";
+            // テンプレートを呼び出し
+            return View();
+        }
     }
 }
