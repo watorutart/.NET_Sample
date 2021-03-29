@@ -13,14 +13,17 @@ namespace testApplication.Controllers
     {
         private readonly MyContext _context;
 
+        // コンテキストを準備
         public BooksController(MyContext context)
         {
             _context = context;
         }
 
         // GET: Books
+        // b.非同期でデータベースにアクセス
         public async Task<IActionResult> Index()
         {
+            // a.データベースにアクセス＆取得した結果をリスト化
             return View(await _context.Book.ToListAsync());
         }
 

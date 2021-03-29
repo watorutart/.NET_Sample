@@ -12,6 +12,7 @@
 <table class="table">
     <thead>
         <tr>
+            <!--b.プロパティの表示名を出力-->
             <th>
                 @Html.DisplayNameFor(model => model.Title)
             </th>
@@ -30,6 +31,7 @@
     <tbody>
 @foreach (var item in Model) {
         <tr>
+            <!--a.データ型に応じた形式で出力-->
             <td>
                 @Html.DisplayFor(modelItem => item.Title)
             </td>
@@ -43,6 +45,7 @@
                 @Html.DisplayFor(modelItem => item.Sample)
             </td>
             <td>
+                <!--c.ハイパーリンクを生成-->
                 <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
                 <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
                 <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
