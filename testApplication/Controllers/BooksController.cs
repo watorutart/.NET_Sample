@@ -35,8 +35,10 @@ namespace testApplication.Controllers
                 return NotFound();
             }
 
+            // b.引数idをキーにデータベースを検索
             var book = await _context.Book
                 .FirstOrDefaultAsync(m => m.Id == id);
+            // c.データが見つからなかった場合、404エラー
             if (book == null)
             {
                 return NotFound();
@@ -54,14 +56,18 @@ namespace testApplication.Controllers
         // POST: Books/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to, for 
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+        // a.HTTP POSTで実行されるアクション
         [HttpPost]
         [ValidateAntiForgeryToken]
+        // b.ポストデータを引数にバインド
         public async Task<IActionResult> Create([Bind("Id,Title,Price,Publisher,Sample")] Book book)
         {
             if (ModelState.IsValid)
             {
+                // c.モデルをデータベースに反映
                 _context.Add(book);
                 await _context.SaveChangesAsync();
+                // d.処理後は一覧画面にリダイレクト
                 return RedirectToAction(nameof(Index));
             }
             return View(book);
