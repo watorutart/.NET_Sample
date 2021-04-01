@@ -62,6 +62,7 @@ namespace testApplication.Controllers
         // b.ポストデータを引数にバインド
         public async Task<IActionResult> Create([Bind("Id,Title,Price,Publisher,Sample")] Book book)
         {
+            /* 
             if (ModelState.IsValid)
             {
                 // c.モデルをデータベースに反映
@@ -71,6 +72,14 @@ namespace testApplication.Controllers
                 return RedirectToAction(nameof(Index));
             }
             return View(book);
+            */
+
+            // テーブルから重複のない出版社名を取得
+            var list = this._context.Book
+                .Select(b => new { Publisher = b.Publisher })
+                .Distinct();
+            ViewBag.Opts = new SelectList(list, "Publisher", "Publisher");
+            return View();
         }
 
         // GET: Books/Edit/5
