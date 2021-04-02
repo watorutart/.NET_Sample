@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
 
 namespace testApplication.Models
 {
@@ -12,6 +13,7 @@ namespace testApplication.Models
         [DisplayName("書名")]
         public string Title { get; set; }
         [DisplayName("価格")]
+        [DataType(DataType.Currency)]
         public int Price { get; set; }
         [DisplayName("出版社")]
         public string Publisher { get; set; }
