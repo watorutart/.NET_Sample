@@ -1,9 +1,14 @@
 ﻿<!--a.モデルの型を宣言-->
 @model IEnumerable<testApplication.Models.Book>
-@{ 
+@{
     ViewData["Title"] = "List";
 }
-    <h2>List</h2>
+
+@{
+ Layout = null;
+}
+
+<h2>List</h2>
 <table class="table">
     <thead>
         <tr>
