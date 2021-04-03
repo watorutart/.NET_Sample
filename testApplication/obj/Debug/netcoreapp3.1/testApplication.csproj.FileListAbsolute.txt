@@ -230,3 +230,5 @@ C:\Users\wator\OneDrive\git\.NET_Sample\testApplication\obj\Debug\netcoreapp3.1\
 C:\Users\wator\OneDrive\git\.NET_Sample\testApplication\obj\Debug\netcoreapp3.1\Razor\Views\Shared\DisplayTemplates\Currency.cshtml.g.cs
 C:\Users\wator\OneDrive\git\.NET_Sample\testApplication\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_MyLayout.cshtml.g.cs
 C:\Users\wator\OneDrive\git\.NET_Sample\testApplication\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_SubLayout.cshtml.g.cs
+C:\Users\wator\OneDrive\git\.NET_Sample\testApplication\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Time.cshtml.g.cs
+C:\Users\wator\OneDrive\git\.NET_Sample\testApplication\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Components\List\Default.cshtml.g.cs

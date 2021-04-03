@@ -5,29 +5,37 @@
 }
 
 @{
- Layout = null;
+ Layout = "_Layout";
 }
 
 <h2>List</h2>
+<partial name="_Time" />
+@await Component.InvokeAsync("List", new { price = 1000}) 
 <table class="table">
-    <thead>
-        <tr>
-            <th>書名</th>
-            <th>価格</th>
-            <th>出版社</th>
-            <th>配布サンプル</th>
-        </tr>
-    </thead>
-    <tbody>
-        <!--b.書籍情報を順に-->
-        @foreach(var item in Model)
+    <!--
+        <thead>
+            <tr>
+                <th>書名</th>
+                <th>価格</th>
+                <th>出版社</th>
+                <th>配布サンプル</th>
+            </tr>
+        </thead>
+    -->
+    <!--
+        <tbody>
+    -->
+    <!--b.書籍情報を順に-->
+    <!--
+    @foreach(var item in Model)
             {
-        <tr>
-            <td>@item.Title</td>
-            <td>@item.Price</td>
-            <td>@item.Publisher</td>
-            <td>@item.Sample</td>
-        </tr>
+    <tr>
+        <td>@item.Title</td>
+        <td>@item.Price</td>
+        <td>@item.Publisher</td>
+        <td>@item.Sample</td>
+    </tr>
             }
     </tbody>
+    -->
 </table>
