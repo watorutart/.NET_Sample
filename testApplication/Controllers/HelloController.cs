@@ -9,7 +9,10 @@ namespace testApplication.Controllers
 {
     public class HelloController : Controller
     {
+
         private readonly MyContext _context;
+
+        [Route("Hoge/Foo")]
         public IActionResult Index()
         {
             return Content("こんにちは、世界！！！");

@@ -57,7 +57,17 @@ namespace testApplication
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Home}/{action=Index}/{id?}");
+                    pattern: "{controller=Home}/{action=Index}/{id?}"/*,
+                    defaults:new
+                    {
+                        controller = "Home",
+                        action = "About"
+                    },
+                    constraints:new
+                    {
+                        id = @"\d{1, 3}"
+                    }*/
+                    );
             });
         }
     }
