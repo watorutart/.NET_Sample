@@ -23,6 +23,9 @@ namespace testApplication.Models
         [DisplayName("配布サンプル")]
         public bool Sample { get; set; }
 
+        [Timestamp]
+        public byte[] RowVersion { get; set; }
+
         public IEnumerable<ValidationResult> Validate(ValidationContext validationContext)
         {
             if (this.Publisher == "フリー文庫" && this.Price > 0)
