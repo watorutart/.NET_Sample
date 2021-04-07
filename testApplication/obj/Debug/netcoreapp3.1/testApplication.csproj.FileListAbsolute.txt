@@ -232,3 +232,5 @@ C:\Users\wator\OneDrive\git\.NET_Sample\testApplication\obj\Debug\netcoreapp3.1\
 C:\Users\wator\OneDrive\git\.NET_Sample\testApplication\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_SubLayout.cshtml.g.cs
 C:\Users\wator\OneDrive\git\.NET_Sample\testApplication\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Time.cshtml.g.cs
 C:\Users\wator\OneDrive\git\.NET_Sample\testApplication\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Components\List\Default.cshtml.g.cs
+C:\Users\wator\OneDrive\git\.NET_Sample\testApplication\bin\Debug\netcoreapp3.1\bundleconfig.json
+C:\Users\wator\OneDrive\git\.NET_Sample\testApplication\bin\Debug\netcoreapp3.1\libman.json

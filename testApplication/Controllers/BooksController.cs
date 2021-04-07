@@ -105,7 +105,7 @@ namespace testApplication.Controllers
         // [Save]ボタンで編集内容をデータベースに反映
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Title,Price,Publisher,Sample,RowVersion")] Book book)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Title,Price,Publisher,Sample"/*,RowVersion*/)] Book book)
         {
             // 隠しフィールドのid値と、URLパラメーターのidとが等しいかチェック
             if (id != book.Id)
@@ -132,10 +132,10 @@ namespace testApplication.Controllers
                     }
                     else
                     {
-                        ModelState.AddModelError(string.Empty, "競合が検出されました。");
+                        // ModelState.AddModelError(string.Empty, "競合が検出されました。");
                         // c.書籍が存在する場合は例外
-                        // throw;
-                        return View(book);
+                        throw;
+                        // return View(book);
                     }
                 }
                 // データベース更新に成功した場合はリダイレクト

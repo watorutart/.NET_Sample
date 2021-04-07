@@ -25,8 +25,8 @@ namespace testApplication.Models
 
         // 問題点：PostgreSqlが対応していない！！
         // C#とPostgresの架け橋となるNpgsqlが対応していないっぽい
-        [Timestamp]
-        public byte[] RowVersion { get; set; } 
+        // [Timestamp]
+        // public byte[] RowVersion { get; set; } 
 
         public IEnumerable<ValidationResult> Validate(ValidationContext validationContext)
         {

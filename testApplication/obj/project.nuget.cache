@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "GO20/yPC7iO9xcNf67Z38YFxwN+GsBJ1Fx3THVKqLjpKjz+8l84axbMNXshomRQh4s7ecchONcqC8H6+hyBWjw==",
+  "dgSpecHash": "XRx52jyNCtDF1JIrEgdkbpB1xd0fJQoUbZJra9kyAYZtlb+cJnMPqmjXMP7teIdrgIg/+v1WKHjesHNC51ok8w==",
   "success": true,
   "projectFilePath": "C:\\Users\\wator\\OneDrive\\git\\.NET_Sample\\testApplication\\testApplication.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\wator\\.nuget\\packages\\buildbundlerminifier\\3.2.449\\buildbundlerminifier.3.2.449.nupkg.sha512",
     "C:\\Users\\wator\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\wator\\.nuget\\packages\\microsoft.aspnetcore.razor\\2.2.0\\microsoft.aspnetcore.razor.2.2.0.nupkg.sha512",
     "C:\\Users\\wator\\.nuget\\packages\\microsoft.aspnetcore.razor.language\\3.1.0\\microsoft.aspnetcore.razor.language.3.1.0.nupkg.sha512",
