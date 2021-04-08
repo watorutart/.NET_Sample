@@ -21,7 +21,7 @@ namespace testApplication.Controllers
         public IActionResult Greet()
         {
             // ビュー変数を用意
-            ViewBag.Message = "こんにちは、世界！";
+            ViewBag.Message = "<h1>こんにちは、世界！</h1>";
             // テンプレートを呼び出し
             return View();
         }

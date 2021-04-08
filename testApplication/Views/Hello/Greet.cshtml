@@ -5,7 +5,7 @@
 
 <h1>Greet</h1>
 <!--a. 式の値を表示-->
-<p>@ViewBag.Message</p>
+<p>@Html.Raw(ViewBag.Message)</p>
 <!--@ViewData["Message"]と同様-->
 
 <button type="button" class="btn btn-primary">Primary</button>

@@ -27,7 +27,10 @@ namespace testApplication.Controllers
             return View(await _context.Book.ToListAsync());
         }
 
+        
         // GET: Books/Details/5
+        [HttpPost]
+        [ValidateAntiForgeryToken]
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
